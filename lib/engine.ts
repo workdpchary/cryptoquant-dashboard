@@ -71,6 +71,7 @@ export interface Trade {
   size       : number
   stop       : number
   target     : number
+  atr        : number
   pnl        : number
   pnl_pct    : number
   hold_days  : number
