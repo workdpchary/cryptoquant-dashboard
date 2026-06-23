@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600&family=Syne:wght@700;800&display=swap');
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: #080C14;
+  color: #A8BBCC;
+  font-family: 'Space Grotesk', system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+}
+
+.grid-bg {
+  background-image:
+    linear-gradient(rgba(30,42,58,0.22) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(30,42,58,0.22) 1px, transparent 1px);
+  background-size: 48px 48px;
+}
+
+::-webkit-scrollbar       { width: 4px; height: 4px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #1E2A3A; border-radius: 4px; }
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 10px;
+  font-weight: 500;
+  font-family: 'JetBrains Mono', monospace;
+  border: 1px solid;
+  letter-spacing: 0.04em;
+}
+.badge-accumulation { background: rgba(0,200,150,.12); color: #00C896; border-color: rgba(0,200,150,.3); }
+.badge-momentum     { background: rgba(77,159,255,.12); color: #4D9FFF; border-color: rgba(77,159,255,.3); }
+.badge-coiling      { background: rgba(155,127,255,.12); color: #9B7FFF; border-color: rgba(155,127,255,.3); }
+.badge-fomo         { background: rgba(255,77,109,.12); color: #FF4D6D; border-color: rgba(255,77,109,.3); }
+.badge-distribution { background: rgba(255,77,109,.12); color: #FF4D6D; border-color: rgba(255,77,109,.3); }
+.badge-noise        { background: rgba(107,127,150,.1); color: #6B7F96; border-color: rgba(107,127,150,.2); }
+
+.recharts-default-tooltip {
+  background: #0F1520 !important;
+  border: 1px solid #1E2A3A !important;
+  border-radius: 8px !important;
+  font-family: 'JetBrains Mono', monospace !important;
+  font-size: 11px !important;
+}
