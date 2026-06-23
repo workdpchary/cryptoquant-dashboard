@@ -14,6 +14,10 @@ export interface Position {
   target?    : number
   notes      : string
   added_at   : string
+  live_price?: number | null
+  pnl_pct?: number | null
+  pnl_usd?: number | null
+  current_val?: number
 }
 
 // ── Storage: Vercel KV if available, else in-process map ─────────────────────
